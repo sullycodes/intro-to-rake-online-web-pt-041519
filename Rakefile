@@ -14,6 +14,12 @@ task :environment do
   require_relative './config/environment'
 end
 
+desc 'this is a test'
+task :test do 
+  puts "test!"
+end
+  
+
 namespace :db do
   desc 'migrate changes to your database'
   task :migrate => :environment do
